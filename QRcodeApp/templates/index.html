@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Generate QR Code</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark p-4">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">QR Code</span>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+            <!-- Section Introduction -->
+            <div>
+                <h1 class="text-center mb-4">Generate QR Code</h1>
+                <p class="text-center fs-4 fw-light">
+                    Generate a QR Code with a link using Python Django Framework
+                </p>
+            </div>
+            
+            <!-- Link Section -->
+            <div class="mt-4">
+                <h2 class="h4 mb-3">Enter Link</h2>
+                <input id="webLink" type="url" placeholder="Paste Link..." class="form-control p-3 rounded-lg">
+                <button id="generateQRcodeButton" class="btn btn-success py-3 px-5 my-3">Generate</button>
+            </div>
+        </div>
+
+        <!-- section for loading circle -->
+        <div style="display: none;" class="justify-content-center mb-4 my-4">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Generate QR Section -->
+        <section class="mt-5">
+            <h3 class="h4 mb-4">Generate QR code</h3>
+            <div id="imageQR" class="mt-2">
+                <!-- QR code image will be displayed here -->
+                <!-- For now, placeholder text is here -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut ad vero temporibus corrupti officia dolorem illo incidunt iste, dolores voluptas sapiente quas aspernatur neque eius similique possimus ex ab.</p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center p-4 text-black mt-5">
+        Powered by <a href="https://github.com/wave010" target="_blank" rel="noopener noreferrer">Code with wave010</a>
+    </footer>
+
+</body>
+</html>
